@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
 }
 
 body {
-    font-family: 'Montserrat', arial, sans-serif;
+    font-family: 'Montserrat';
     font-size: 18px;
     line-height: 1;
     color: #060606;
@@ -34,14 +34,7 @@ body {
 }
 
 
- /* стилевой класс, который управляет шириной контейнера сетки*/
-.container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 770px;
-    padding: 0 15px;
-    line-height: 21.94px;
-}
+
 
  /* HEADER */
 
@@ -57,27 +50,28 @@ nav {
 .logo {
     display: block;
     float: left;
-    padding-left: 50px;
+    padding-left: 88px;
     margin-bottom: -20px;
     z-index: 4;
     position: relative;
-    margin-right: 40px;
+    margin-right: 0px;
 }
 
- /* меню */
+ /* MENU */
 #menu {
     text-align: center;
 }
 #menu li {
     display: inline-block;
     margin-right: 30px;
+    margin-top: 38px;
 }
 #menu a {
     color: #111;
     letter-spacing: 1px;
     font-weight: 600;
     display: block;
-    line-height: 76px;
+    line-height: 60px;
 }
 
 #menu a:hover {
@@ -90,20 +84,23 @@ nav {
     margin-right: 0;
 }
 
+#menu li:first-child {
+    margin-right: 45px;
+}
+
 #lv {
     float: right;
-    margin-right: 50px;
 }
 
 #en, #ru {
     visibility: hidden;
 }
 #ru {
-    order: 1;
+    order: 3;
 }
 
 #lv2 {
-    order: 3;
+    order: 1;
 }
 #language {
     display: flex;
@@ -133,7 +130,7 @@ nav {
 
 #video {
     position: relative;
-    top: 20px;
+    top: 55px;
     transition: .2s ease-in-out;
 }
 
@@ -142,7 +139,7 @@ nav {
     min-width: 50px;
     margin: 0 47%;
     position: absolute;
-    margin-top: 24%;
+    margin-top: 27%;
     background-color: white;
     border-radius: 50%;
     z-index: 1;
@@ -155,10 +152,21 @@ nav {
  
 
 /*TEXT*/
+.container {
+    margin: 230px auto 180px auto;
+    width: 100%;
+    max-width: 750px;
+    padding: 0 15px;
+}
+
 .container p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     text-align: center;
-    margin: 150px 0px;
-    line-height: 30px;
+    color: #2F4858;
 }
 
 /*PHOTOS*/
@@ -205,33 +213,28 @@ nav {
 
 /*BUTTONS*/
 .container3 {
-    margin: 150px 10%;
-    height: 81.38px;
-    
+    margin: 200px 165px 172px 165px;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .buttons {
-    display:inline-block;
     text-align: center;
-    float: left;
-    width: 380px;
-}
-
-#buttons li:last-child {
-    float: right;
+    width: 50%;
 }
 
 button {
     background-color: rgb(255, 170, 0);
-    margin-top: 15px;
-    width: 233px;
-    height: 50px;
+    margin-top: 55px;
+    width: 260px;
+    height: 55px;
     border: none;
-    border-radius: 20px;
+    border-radius: 100px;
     color: white;
     font-size: 24px;
     cursor: pointer;
     transition: .2s ease-in-out;
+
 }
 
 button:hover {
@@ -240,17 +243,22 @@ button:hover {
 
 /*EMAIL*/
 
-.widget {
+.widget-title {
+    font-size: 33px;
+    margin-bottom: 60px;
     text-align: center;
     width: 100%;
 }
 
 #container2 {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 570px;
+    max-width: 710px;
     padding: 0 15px;
-    margin-bottom: 50px;
+    margin-bottom: 135px;
 }
 
 input, textarea {
@@ -262,27 +270,28 @@ input, textarea {
 }
 
 input {
-    height: 40px;
+    height: 50px;
     margin-top: 15px;
-    padding: 0 10px;
+    padding: 0 20px;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 
 textarea { 
-    height:300px;
+    height:260px;
     resize: none;
-    margin: 15px 0;
-    padding: 10px 10px;
+    margin: 15px 0 10px 0;
+    padding: 12px 20px;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 
 #name, #email {
-    width: 262px;
+    width: 49%;
 }
-
 #name {
     float: left;
-    margin-right: 10px;
 }
-
 #email {
     float: right;
 }
@@ -290,19 +299,31 @@ textarea {
 form p {
     text-align: left;
     color: #2F4858;
-    line-height: 25px;
+    line-height: 20px;
+    font-size: 15.5px;
+    margin-bottom: 35px;
+}
+
+#check {
+    display: flex;
+}
+
+#check label {
+    width: 97%;
+    padding-left: 25px;
 }
 
 #checkbox {
-    width: 13px; 
-    height: 13px;
-    margin-top: 0px;
+    margin-top: 1px;
+    width: 3%;
+    height: 17px;
 }
 
 #submit {
-    width: 182px;
-    height: 62;
-    
+    width: 200px;
+    height: 70px;
+    margin-top: 23px;
+    font-size: 28px;
 }
 
 /*SUPPORTERS*/
@@ -310,7 +331,7 @@ form p {
 #supporter_header {
     text-align: center;
     background-color: rgb(255, 203, 102);
-    padding-top:30px;
+    padding-top:58px;
 }
 
 .support1 {
@@ -322,37 +343,37 @@ form p {
 }
 
 .sp {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1250px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 75px 0px 120px 0px;
     background-color: rgb(255, 203, 102);
     position: relative;
 }
 
 #first { 
-    width: 30%;
-    max-width: 250px;
-    padding-right: 40px;
+    max-width: 265px;
+    width: 100%;
 }
 
 #second { 
-    width: 30%; 
-    max-width: 250px;
-    padding-right: 40px;
+    max-width: 230px;
+    width: 100%;
 }
 
-#thirsd { 
-    width: 30%; 
-    max-width: 250px;
+#thirsd {
+    max-width: 230px;
+    width: 100%;
     margin-bottom: 10px;
-    padding-right: 40px;
 }
 
-#fourth { 
-    width: 10%;
-    max-width: 100px;
+#fourth {
+    max-width: 93px;
+    width: 100%;
 }
  
 /*FOOTER*/
@@ -360,21 +381,22 @@ footer {
     background-color: #2F4858;
     margin: -50px 0 0 0;
     width: 100%;
-    padding: 50px 5% 10px 0;
+    padding: 50px 5% 10px 5%;
 }
 
-footer img {
-    width: 70%;
+footer.foot {
+    width: 100%;
 
 }
 #container-footer {
     color: white;
-    margin: 40px 2% 0 2%;
+    margin: 35px 0 0 0;
     display: flex;
     flex-flow: row wrap;
     justify-content:space-between;
-    width: 96%;
-    line-height: 25px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 19px;
 }
 
 #container-footer a {
@@ -384,25 +406,34 @@ footer img {
 #SparkleHeart {
     color: white;
     line-height: 25px;
-    width: 50%;
+    width: 100%;
     vertical-align: bottom;
-    padding-top: 30px;
+    font-size: 15px;
 }
 
 #facebook, #insta {
     padding-left: 20px;
     float: right;
-    height: 30px;
+    height: 40px;
     width: auto;
     display: inline-block;
 }
 #fa-in {
-    width: 50%;
-    padding: 15px 0;
+    padding: 45px 0 15px 0;
 }
 
 #juris {
-    font-size: 18px;
+    font-size: 26px;
+}
+
+#biedriba-sp {
+    font-size: 26px;
+}
+
+#second-menu {
+    margin-top: -5px;
+    line-height: 48px;
+    padding-left: 0px;
 }
 
 #second-menu a:hover {
@@ -418,49 +449,54 @@ footer img {
 }
 
 #info {
+    
     text-align: right;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
 }
 
 #rights {
     color: white;
     width: 50%;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 #rights-hide {
     display: none;
+    font-size: 15px;
 }
 
 #last {
     color: white;
     width: 50%;
     text-align: right;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 @media (max-width: 970px) {
-    /* BUTTONS */
+    /* PHOTOS */
     li.photos {
         width: 100%;
     }
+}
 
+@media (max-width: 1270px) {
+    /* BUTTONS */
     .container3 {
-        height: 380px;
-        margin-bottom: 0;
+        margin: 200px 0px;
     }
-
-    #buttons {
-        float: none;
-    }
-
     .buttons {
-        display:block;
-        float: none;
-        width: auto;
+        width:100%;
     }
-
-    #buttons li:last-child {
-        margin-top: 100px;
-        float: none;
-     }
+    .buttons:first-child {
+        width:100%;
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -541,6 +577,7 @@ footer img {
        display: block;
        text-align: center;
        margin-right: 0;
+       margin-top: 10px;
     }
 
     #menu a {
@@ -552,6 +589,10 @@ footer img {
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    #menu li:first-child {
+        margin-right: 0;
+     }
 
     .logo {
         margin-left: 5%;
@@ -579,30 +620,52 @@ footer img {
     
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     #first { 
         width: 50%;
-        padding-right: 10px;
+        padding: 5% 0 5% 5%;
+        max-width: none;
+    }
+    #first img {
+        max-width: 300px;
     }
     
     #second { 
-        width: 50%; 
-        padding-right: 0px;
+        width: 50%;
+        padding: 5% 5% 5% 5px;
+        max-width: none;
+    }
+    #second img {
+        max-width: 300px;
+        float: right;
     }
     
     #thirsd { 
         width: 70%;
+        padding: 5% 40px 5% 5%;
+        max-width: none;
         margin-bottom: 0px;
-        padding-top: 30px;
-        padding-right: 60px;
+    }
+    #thirsd img {
+        max-width: 300px;
+        
     }
     
     #fourth { 
-        width: 30%; 
-        padding-right: 40px;
-        padding-top: 30px;
-    } 
+        width: 30%;
+        padding: 5%;
+        max-width: none;
+    }
+
+    #fourth img {
+        max-width: 100px;
+    }
+
+    .sp {
+        justify-content: space-around;
+    }
   }
+
 
 @media (max-width: 1130px) {
     #biedriba {
@@ -621,16 +684,16 @@ footer img {
 
 
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
     
     #info {
         text-align: left;
         width: 100%;
         order: 2;
+        font-size: 17px;
     }
 
     #fa-in {
-        order: 3;
         width: 100%;
     }
     #insta {
@@ -643,7 +706,7 @@ footer img {
     }
 
     #SparkleHeart {
-        order: 4;
+        order: 3;
         width: 100%;
         padding-top: 0px;
     }
@@ -654,7 +717,7 @@ footer img {
         display: none;
     }
     #last {
-        order: 5;
+        order: 4;
         width: 100%;
         text-align: left;
     }
