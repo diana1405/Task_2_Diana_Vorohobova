@@ -39,7 +39,7 @@ body {
 header { 
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 99;
 }
 nav {
     background: white;
@@ -51,7 +51,7 @@ nav {
     float: left;
     padding-left: 62px;
     margin-bottom: -20px;
-    z-index: 4;
+    z-index: 100;
     position: relative;
     margin-right: 0px;
 }
@@ -74,12 +74,18 @@ nav {
     line-height: 21.94px;
 }
 
+#active {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 203, 102);
+    text-decoration-thickness: 3px;
+}
+
 #menu a:hover {
     text-decoration: underline;
     text-decoration-color: rgb(255, 203, 102);
     text-decoration-thickness: 3px;
-    
 }
+
 #menu li:last-child {
     margin-right: 0;
 }
@@ -133,43 +139,22 @@ nav {
     transition: .5s ease-in-out;
 }
 
-/*VIDEO*/
-
-#video {
-    position: relative;
-    top: 47px;
-    transition: .2s ease-in-out;
-}
-
-#button {
-    width: 86px;
-    min-width: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin-top: 27%;
-    background-color: white;
-    border-radius: 50%;
-    z-index: 1;
-    transition: .2s ease-in-out;
-}
-
-#button:hover {
-    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24);
-}
- 
-
 /*TEXT*/
-.container {
-    margin: 197px auto 152px auto;
-    width: 100%;
-    max-width: 654px;
-    padding: 0px;
+#ideja_title {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 72px;
 }
 
-.container p {
+.container {
+    margin: 0px auto 165px auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 0px;
+    padding-top: 215px;
+}
+
+#text_par_juri {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -179,94 +164,12 @@ nav {
     color: #2F4858;
 }
 
-/*PHOTOS*/
-#bb {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-#one {
-    width: 24.7%;
-    margin-bottom: -50px;
-}
-#two {
-    width: 24.7%;
-    margin-bottom: -50px;
-}
-#three {
-    width: 21.9%;
-    margin-bottom: -50px;
-}
-#four {
-    width: 28.7%;
-    margin-bottom: -40px;
-}
-
-#vector1 {
-
-    height: 50px;
-    margin-bottom: -30px;
-    z-index: 2px;
-    position: relative;
-    width: 100%;
-    background-image: url('../img/ripped\ 6\ 7.png');
-}
-
-#vector2 {
-    order: 6; 
-    height: 50px;
-    margin-bottom: -30px;
-    width: 100%; 
-    background-image: url('../img/ripped-6-8.png');
-}
-
-
-/*BUTTONS*/
-.container3 {
-    margin: 187px auto 160px auto;
-    display: flex;
-    width: 100%;
-    max-width: 1053px;
-    flex-flow: row wrap;
-}
-
-.buttons {
-    text-align: center;
-    width: 50%;
-}
-
-.buttons h2 {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-#velies2 {
-    display: none;
-}
-
-button {
-    background-color: rgb(255, 170, 0);
-    margin-top: 45px;
-    width: 233px;
-    height: 50px;
-    border: none;
-    border-radius: 100px;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-
-}
-
-button:hover {
-    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24);
-}
 
 /*CONTACT*/
-
 .widget-title {
-    font-size: 33px;
-    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 55px;
     text-align: center;
     width: 100%;
 }
@@ -279,7 +182,7 @@ button:hover {
     width: 100%;
     max-width: 642px;
     padding: 0 15px;
-    margin-bottom: 124px;
+    margin-bottom: 145px;
 }
 
 #container2 h2 {
@@ -306,7 +209,7 @@ input {
 textarea { 
     height:232px;
     resize: none;
-    margin: 15px 0 10px 0;
+    margin: 15px 0 20px 0;
     padding: 12px;
     font-family: 'Montserrat';
     font-size: 18px;
@@ -354,69 +257,29 @@ form p {
     font-size: 24px;
 }
 
-/*SUPPORTERS*/
+button {
+    background-color: rgb(255, 170, 0);
+    margin-top: 28px;
+    width: 233px;
+    height: 50px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
 
-#supporter_header {
-    text-align: center;
-    background-color: rgb(255, 203, 102);
-    padding-top:45px;
-    font-size: 24px;
 }
 
-.support1 {
-    margin: 0 0 -5px 0;
-}
-
-.support2 {
-    margin: -5px 0 0 0;
-}
-
-#bg {
-    background-color: rgb(255, 203, 102);
-}
-
-.sp {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1115px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 75px 10px 100px 10px;
-    background-color: rgb(255, 203, 102);
-    position: relative;
-}
-
-#first { 
-    max-width: 241.95px;
-    width: 100%;
-    padding-right: 20px;
-}
-
-#second { 
-    max-width: 209.32px;
-    width: 100%;
-    padding-right: 20px;
-}
-
-#thirsd {
-    max-width: 238.96px;
-    width: 100%;
-    margin-bottom: 10px;
-    padding-right: 20px;
-}
-
-#fourth {
-    max-width: 84.77px;
-    width: 100%;
+button:hover {
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24);
 }
  
 /*FOOTER*/
 footer {
     background-color: #2F4858;
-    margin-top: -50px;
     width: 100%;
-    padding: 50px 0 10px 0;
+    padding: 20px 0 10px 0;
 }
 
 footer.foot {
@@ -425,7 +288,7 @@ footer.foot {
 }
 #container-footer {
     color: white;
-    margin: 35px auto 0 auto;
+    margin: 0px auto 0 auto;
     padding: 0 10px;
     display: flex;
     flex-flow: row wrap;
@@ -516,44 +379,13 @@ footer.foot {
     line-height: 14px;
 }
 
-/* PHOTOS AND VIDEO MOBILE */
-@media (max-width: 400px) {
-    #one {
-        width: 50%;
-        order: 4;
-    }
-
-    #two {
-        width: 50%;
-        order: 5;
-    }
-
-    #three {
-        width: 40%;
-        order: 2;
-    }
-
-    #four {
-        width: 60%;
-        order: 3;
-    }
-
-    #video {
-        position: relative;
-        top: 50px;
-    }
-
-    #button {
-        margin-top: 33%;
-    }
-}
-
 /* CONTACT */
 @media (max-width: 600px) {
     #name, #email {
         width: 100%;
     }
 }
+
 
 @media (max-width: 1250px) {
     /* SHOW BUTTON */
@@ -648,46 +480,12 @@ footer.foot {
         height: 75px;
     }
 
-    /* VIDEO */
-    #video {
-        top: 71px;
-    }
-
-    #button {
-        margin-top: 30%;
-    }
+    /* TEXT */
 
     .container {
-        margin: 225px auto 135px auto;
+        margin: 0px auto 135px auto;
         width: 100%;
         max-width: 608px;
-    }
-
-    /* BUTTONS */
-    .buttons h2 {
-        font-size: 18px;
-    }
-
-    #velies {
-        display: none;
-    }
-
-    #velies2 {
-        display: block;
-        padding: 0 90px;
-        line-height: 25px;
-    }
-
-    .buttons button {
-        margin-top: 82px;
-    }
-
-    #first-button {
-        margin-top: 50px;
-    }
-
-    .container3 {
-        margin-bottom: 155px;
     }
 
     /*CONTACT*/
@@ -713,40 +511,6 @@ footer.foot {
 
     #container2 {
         margin-bottom: 132px;
-    }
-
-    /*SUPPORTERS*/
-    #first { 
-        max-width: 171px;
-        width: 100%;
-    }
-    
-    #second { 
-        max-width: 150px;
-        width: 100%;
-    }
-    
-    #thirsd {
-        max-width: 169px;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    
-    #fourth {
-        max-width: 49px;
-        width: 100%;
-    }
-
-    #first, #second, #thirsd {
-        padding-right: 30px;
-    }
-
-    .sp {
-        padding: 30px 8% 55px 8%;
-    }
-
-    #supporter_header {
-        padding-top: 33px;
     }
 
     /* FOOTER */
@@ -824,26 +588,6 @@ footer.foot {
     #last {
         width: 50%;
         padding-top: 50px;
-    }
-}
-
-@media (max-width: 700px) {
-    /* BUTTONS */
-    .container3 {
-        margin: 200px 0px;
-    }
-
-    .buttons {
-        width:100%;
-    }
-
-    .buttons:first-child {
-        width:100%;
-        margin-bottom: 95px;
-    }
-
-    #velies2 {
-        padding: 0;
     }
 }
 
@@ -937,49 +681,17 @@ footer.foot {
         font-size: 18px;
     }
 
-    /* VIDEO */
-    #video {
-        top: 49px;
-    }
-
-    #button {
-        margin-top: 35%;
-        width: 50px;
-    }
+    /* TEXT */
 
     .container {
-        margin: 130px auto 90px auto;
+        margin: 0px auto 90px auto;
         width: 100%;
         max-width: 280px;
     }
     
-    .container p {
+    #text_par_juri {
         font-size: 12px;
         line-height: 15px;
-    }
-
-    /* BUTTONS */
-    .buttons h2 {
-        font-size: 18px;
-        width: 233px;
-        margin: auto;
-    }
-
-    #velies {
-        display: block;
-    }
-
-    #velies2 {
-        display: none;
-    }
-
-    .buttons button, #first-button {
-        margin-top: 35px;
-    }
-
-    .container3 {
-        margin-top: 170px;
-        margin-bottom: 125px;
     }
 
     /*CONTACT*/
@@ -1029,41 +741,6 @@ footer.foot {
 
     #container2 {
         margin-bottom: 132px;
-    }
-
-    /* SUPPORTERS */
-    #supporter_header {
-        padding-top: 60px;
-    }
-
-    .sp {
-        flex-flow: row wrap;
-        padding: 50px 20px 55px 20px;
-    }
-
-    #first { 
-        width: 50%;
-        padding: 5% 0 5% 0;
-        max-width: none;
-    }
-
-    #second { 
-        width: 50%;
-        padding: 5% 0 5% 10px;
-        max-width: none;
-    }
-
-    #thirsd { 
-        width: 63%;
-        padding: 5% 40px 5% 0;
-        max-width: none;
-        margin-bottom: 0px;
-    }
-
-    #fourth { 
-        width: 37%;
-        padding: 5% 35px 5% 5%;
-        max-width: none;
     }
 
     /* FOOTER */
