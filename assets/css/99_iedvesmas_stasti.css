@@ -231,6 +231,41 @@ nav {
     z-index: 6;
 }
 
+/*PHOTOS*/
+#photos {
+    text-align: center;
+    color: #2F4858;
+}
+
+#picture {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    max-width: 1030px;
+    margin: 50px auto;
+}
+
+#photos {
+    margin-top: 50px;
+    text-align: center;
+    color: #2F4858;
+}
+
+#photos h2 {
+    font-size: 30px;
+    margin-bottom: 55px;
+    font-weight: 500;
+}
+
+#photos p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-bottom: 50px;
+}
+
+
 /*FOOTER*/
 footer {
     background-color: #2F4858;

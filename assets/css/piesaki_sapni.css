@@ -154,6 +154,10 @@ nav {
     padding-top: 215px;
 }
 
+#ideja_title {
+    padding-bottom: 65px;
+}
+
 #text_par_juri {
     font-family: 'Montserrat';
     font-style: normal;
@@ -575,21 +579,45 @@ footer.foot {
     /* IDEJA */
 
     .container {
-        margin: 0px auto 135px auto;
+        margin: 0px auto 92px auto;
         width: 100%;
         max-width: 608px;
+        padding-top: 178px;
     }
 
     /* BUTTONS */
-    .buttons h2 {
-        font-size: 18px;
+    .container3 {
+        margin: 0px auto;
+        justify-content: center;
+        margin-bottom: 145px;
     }
 
-    .container3 {
-        margin-bottom: 155px;
+    .buttons {
+        width:100%;
+        max-width: 628px;
+    }
+
+    .buttons:first-child {
+        width:100%;
+        margin-bottom: 152px;
+    }
+
+    .buttons img {
+        margin-bottom: 50px;
+    }
+
+    .buttons p {
+        max-width: 628px;
+        height: auto;
+        margin: 30px auto 28px auto;
+        padding: 0px 10px;
     }
 
     /*CONTACT*/
+    .widget-title {
+        margin-bottom: 50px;
+    }
+
     input {
         height: 40px;
     }
@@ -611,7 +639,7 @@ footer.foot {
     }
 
     #container2 {
-        margin-bottom: 132px;
+        margin-bottom: 150px;
     }
 
     /* FOOTER */
@@ -689,22 +717,6 @@ footer.foot {
     #last {
         width: 50%;
         padding-top: 50px;
-    }
-}
-
-@media (max-width: 700px) {
-    /* BUTTONS */
-    .container3 {
-        margin: 200px 0px;
-    }
-
-    .buttons {
-        width:100%;
-    }
-
-    .buttons:first-child {
-        width:100%;
-        margin-bottom: 95px;
     }
 }
 
@@ -799,16 +811,21 @@ footer.foot {
     }
 
     /* IDEJA */
-
     .container {
-        margin: 0px auto 90px auto;
+        margin: 0px auto 82px auto;
         width: 100%;
         max-width: 280px;
+        padding-top: 110px;
+    }
+
+    #ideja_title {
+        font-size: 36px;
+        padding-bottom: 37px;
     }
     
     #text_par_juri {
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 17.07px;
     }
 
     /* BUTTONS */
@@ -818,14 +835,55 @@ footer.foot {
         margin: auto;
     }
 
+    .buttons img {
+        margin-bottom: 25px;
+    }
+
+    .buttons p {
+        font-size: 12px;
+        max-width: 300px;
+        line-height: 14.63px;
+        margin: 6px auto 28px auto;
+    }
+
     .buttons button, #first-button {
-        margin-top: 35px;
+        margin-top: 25px;
+    }
+
+    .buttons:first-child {
+        margin-bottom: 70px;
     }
 
     .container3 {
-        margin-top: 170px;
-        margin-bottom: 125px;
+        margin-bottom: 115px;
     }
+
+    /*PHOTOS*/
+
+    #one {
+        width: 50%;
+        order: 3;
+    }
+
+    #two {
+        width: 50%;
+        order: 4;
+    }
+
+    #three {
+        width: 38.55%;
+        order: 1;
+    }
+
+    #four {
+        width: 61.45%;
+        order: 2;
+    }
+
+    #photos {
+        margin-bottom: 120px;
+    }
+
 
     /*CONTACT*/
     #container2 h2 {

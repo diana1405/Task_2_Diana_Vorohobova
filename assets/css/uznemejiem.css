@@ -483,18 +483,28 @@ footer.foot {
     /* TEXT */
 
     .container {
-        margin: 0px auto 135px auto;
+        margin: 0px auto 158px auto;
         width: 100%;
         max-width: 608px;
+        padding-top: 178px;
+    }
+
+    #ideja_title {
+        padding-bottom: 65px;
     }
 
     /*CONTACT*/
+    .widget-title {
+        margin-bottom: 85px;
+    }
+
     input {
         height: 40px;
     }
     
     textarea { 
         height:230px;
+        margin-bottom: 10px;
     }
 
     form p {
@@ -510,8 +520,9 @@ footer.foot {
     }
 
     #container2 {
-        margin-bottom: 132px;
+        margin-bottom: 150px;
     }
+
 
     /* FOOTER */
 
@@ -684,14 +695,20 @@ footer.foot {
     /* TEXT */
 
     .container {
-        margin: 0px auto 90px auto;
+        margin: 0px auto 125px auto;
         width: 100%;
         max-width: 280px;
+        padding-top: 110px;
+    }
+
+    #ideja_title {
+        font-size: 36px;
+        padding-bottom: 37px;
     }
     
     #text_par_juri {
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 17.07px;
     }
 
     /*CONTACT*/
