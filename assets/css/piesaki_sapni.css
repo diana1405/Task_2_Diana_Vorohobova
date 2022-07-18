@@ -223,7 +223,12 @@ button {
 }
 
 button:hover {
+    background-color: #FFDA16;
     box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24);
+}
+
+button:active {
+    background-color: #FF8A00;
 }
 
 /*PHOTOS*/
@@ -363,8 +368,39 @@ form p {
     font-size: 24px;
 }
 
+#paldies {
+    margin-top: 50px;
+    display: none;
+}
+
+#paldies.paldies2 {
+    display: block;
+}
+
+#submit.submit2, #obligati.submit2, #check.submit2 {
+    display: none;
+}
+
+#paldies p {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    text-align: center;
+    color:#FFA800;
+}
+
+#paldies p:last-child {
+    font-size: 18px;
+    line-height: 21.94px;
+}
+
  
 /*FOOTER*/
+#footer-img {
+    margin-bottom: -1px;
+}
+
 footer {
     background-color: #2F4858;
     width: 100%;

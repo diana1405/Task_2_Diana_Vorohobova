@@ -34,24 +34,39 @@
             </nav>
             <div id="vector"><img src="assets/img/ripped 6 7.png"></div>
         </header>
-        
 
         <!--TEXT-->
         <div class="container">
-        <h1 id="title">404</h1>
-        <p id="text1">
-            Lapa netika atrasta!
+        <h1 id="ideja_title">SAPŅUS ATBALSTA</h1>
+        <p id="text_par_juri">
+            Sadarbības partneri ir uzņēmumi, kuri savā preču vai pakalpojumu ikdienā ir integrējuši SparkleHeart zīmolu un dala ar to konkrētu daļu savu ienākumu.
         </p>
-        <p id="text2">
-            Radusies kāda tehniska kļūda, vai šī lapa vairs nav pieejama.
-        </p>
-        <form action="ideja.html">
-            <input type="submit" id="button" value="Uz sākumlapu" />
+        </div>
+
+        <!--SELECT-->
+        <div id="select">
+        <form>
+            <label for="pilsēta">Uzņēmuma atrašanas vieta<br></label>
+            <select name="pilsēta" id="town">
+              <option value="Rīga">Rīga</option>
+              <option value="Jelgava">Jelgava</option>
+              <option value="Ogre">Ogre</option>
+            </select>
+        </form>
+        <form>
+            <label for="veids">Uzņēmuma veids<br></label>
+            <select name="veids" id="type">
+                <option value="Ēdinašana">Ēdinašana</option>
+            </select>
         </form>
         </div>
 
+        <!--KARTE-->
+        <img id="karte" src="assets/img/sapnus_atbalsta/Karte.png">
+        
+
         <!--FOOTER-->
-        <img src="assets/img/ideja/footer.png">
+        <img id="footer-img" src="assets/img/ideja/footer.png">
 
         <footer>
             <div id="container-footer">
@@ -107,7 +122,7 @@
 
             
         </footer>
-        <script src="assets/js/ideja.js"></script>
+        <script src="assets/js/sapnus_atbalsta.js"></script>
     </body>
 
 </html>

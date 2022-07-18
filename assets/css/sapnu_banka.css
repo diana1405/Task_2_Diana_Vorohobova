@@ -169,7 +169,6 @@ nav {
     right: 0;
     position: absolute;
     margin-top: 25%;
-    background-color: white;
     border-radius: 50%;
     z-index: 2;
 }
@@ -184,6 +183,7 @@ nav {
     flex-flow: row wrap;
     max-width: 1000px;
     margin: auto auto 120px auto;
+    padding: 0px 10px;
 }
 
 #merkis h1 {
@@ -269,8 +269,9 @@ nav {
     line-height: 29px;
     text-align: center;
     color: #FFFFFF;
-    max-width: 818px;
+    max-width: 838px;
     margin: 40px auto 25px auto;
+    padding: 0px 10px;
 }
 
 /*YELLOW2*/
@@ -369,10 +370,19 @@ button {
 }
 
 button:hover {
+    background-color: #FFDA16;
     box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24);
 }
 
+button:active {
+    background-color: #FF8A00;
+}
+
 /*FOOTER*/
+#footer-img {
+    margin-bottom: -1px;
+}
+
 footer {
     background-color: #2F4858;
     width: 100%;
@@ -573,9 +583,83 @@ footer.foot {
     /* TEXT */
 
     .container {
-        margin: 0px auto 135px auto;
+        margin: 0px auto 0px auto;
         width: 100%;
         max-width: 608px;
+        padding-top: 178px;
+    }
+
+    #ideja_title {
+        padding-bottom: 60px;
+    }
+
+    /* MERKIS */
+    #merkis {
+        max-width: 625px;
+    }
+
+    #merkis img {
+        padding: 45px 40px;
+        width: 230px;
+        
+    }
+
+    #palidzet {
+        width: 58%;
+    }
+    
+    #montain {
+        width: 42%;
+    }
+
+    /*MISIJA*/
+    #misija h2 {
+        margin-bottom: 35px;
+    }
+
+    /*YELLOW*/
+    .yellow {
+        padding: 50px 0 25px 0;
+    }
+
+    .yellow p, #yellow2 {
+        max-width: 628px;
+    }
+
+    /*SAPNUS_ATLASIS*/
+    #sapnus_atlasis img, #sapnus_atlasis #people {
+        height: 128px;
+        padding-bottom: 28px;
+    }
+
+    #sapnus_atlasis img {
+        height: 128px;
+    }
+
+    #sapnus_atlasis div {
+        padding-left: 30px;
+    }
+
+    #sapnus_atlasis div:last-child {
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+
+    #sapnus_atlasis p {
+        font-size: 18px;
+        line-height: 21.94px;
+        max-width: 255px;
+    }
+
+    /* YELLOW2 */
+    #yellow2 {
+        margin-bottom: 0px;
+    }
+
+    #rainbow {
+        max-width: 431.6px;
+        padding-right: 30px;
     }
 
     /* BUTTONS */
@@ -602,7 +686,8 @@ footer.foot {
     }
 
     .container3 {
-        margin-bottom: 155px;
+        margin-top: 150px;
+        margin-bottom: 150px;
     }
 
     /* FOOTER */
@@ -684,6 +769,11 @@ footer.foot {
 }
 
 @media (max-width: 700px) {
+    /* PHOTO */
+    #circle_button {
+        width: 70px;
+    }
+
     /* BUTTONS */
     .container3 {
         margin: 200px 0px;
@@ -705,6 +795,73 @@ footer.foot {
 
 /*FOOTER MOBILE*/
 @media (max-width: 630px) {
+    /* PHOTO */
+    #circle_button {
+        width: 60px;
+    }
+
+    /* MERKIS */
+    .saule_glases, #saule, #palidzet, #mountain, #glases {
+        width: 100%;
+    }
+
+    .saule_glases img, #merkis img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #saule, #palidzet, #glases {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10px;
+        max-width: none;
+    }
+
+    #mountain {
+        order: 4;
+    }
+
+    #palidzet {
+        order: 5;
+    }
+
+    #glases-img {
+        order: 6;
+    }
+
+    #glases {
+        order: 7;
+    }
+
+    /* MISIJA */
+    #misija p {
+        margin-bottom: 100px;
+    }
+
+    /* SAPNUS_ATLASIS */
+    #sapnus_atlasis {
+        margin: 100px auto;
+    }
+
+    #sapnus_atlasis div {
+        width: 100%;
+        padding-left: 0px;
+        margin-bottom: 70px;
+    }
+    
+    #sapnus_atlasis div:last-child {
+        width: 100%;
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    /* BUTTON */
+    .container3 {
+        margin: 100px 0;
+    }
+
+    /* FOOTER */
     .foot {
         width: 100px;
         padding-top: 0;
@@ -796,14 +953,97 @@ footer.foot {
     /* TEXT */
 
     .container {
-        margin: 0px auto 90px auto;
+        margin: 0px auto 38px auto;
         width: 100%;
         max-width: 280px;
+        padding-top: 110px;
     }
-    
-    #text_par_juri {
+
+    #ideja_title {
+        font-size: 36px;
+        padding-bottom: 0px;
+    }
+
+    /* PHOTO */
+    #circle_button {
+        width: 50px;
+        margin-top: 21%;
+    }
+
+    /* MERKIS */
+    #merkis h1 {
+        font-size: 24px;
+        margin: 125px 0 0px 0;
+    }
+
+    #merkis img {
+        padding: 65px 0px 30px 0px;
+        width: 118px;
+    }
+
+    #merkis p {
         font-size: 12px;
-        line-height: 15px;
+        line-height: 14.63px;
+    }
+
+    /* MISIJA */
+    #misija h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    #misija p {
+        font-size: 18px;
+        line-height: 21.94px;
+        max-width: 280px;
+        margin: 0 auto 125px auto;
+    }
+
+    .yellow {
+        padding: 60px 0 25px 0;
+    }
+
+    .yellow img {
+        max-width: 268.33px;
+        margin: auto;
+    }
+
+    .yellow p, #yellow2 {
+        max-width: 300px;
+        font-size: 18px;
+        line-height: 21.94px;
+        margin: 35px auto 45px auto;
+    }
+
+    /* SAPNUS_ATLASIS */
+    #sapnus_atlasis {
+        margin: 138px auto 120px auto;
+    }
+
+    #sapnus_atlasis h2 {
+        font-size: 24px;
+        margin-bottom: 70px;
+    }
+
+    #sapnus_atlasis div {
+        margin-bottom: 60px;
+    }
+
+    #sapnus_atlasis p {
+        font-size: 18px;
+        line-height: 21.94px;
+        max-width: 280px;
+    }
+
+    #sapnus_atlasis #people {
+        height: 108px;
+        padding-bottom: 28px;
+    }
+
+    /* YELLOW2 */
+    #rainbow {
+        max-width: 279.71px;
+        padding-right: 0px;
     }
 
     /* BUTTONS */
@@ -822,12 +1062,20 @@ footer.foot {
     }
 
     .buttons button, #first-button {
-        margin-top: 35px;
+        margin-top: 55px;
+    }
+
+    .buttons:first-child {
+        margin-bottom: 80px;
     }
 
     .container3 {
-        margin-top: 170px;
-        margin-bottom: 125px;
+        margin-top: 125px;
+        margin-bottom: 130px;
+    }
+
+    #velies3 {
+        line-height: 26.68px;
     }
 
     /* FOOTER */

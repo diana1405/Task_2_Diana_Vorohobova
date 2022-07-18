@@ -150,7 +150,6 @@ nav {
     right: 0;
     position: absolute;
     margin-top: 27%;
-    background-color: white;
     border-radius: 50%;
     z-index: 1;
     transition: .2s ease-in-out;
@@ -259,7 +258,12 @@ button {
 }
 
 button:hover {
+    background-color: #FFDA16;
     box-shadow: 0 5px 16px 0 rgba(0,0,0,0.24);
+}
+
+button:active {
+    background-color: #FF8A00;
 }
 
 /*CONTACT*/
@@ -412,6 +416,10 @@ form p {
 }
  
 /*FOOTER*/
+#footer-img {
+    margin-bottom: -1px;
+}
+
 footer {
     background-color: #2F4858;
     margin-top: -50px;
