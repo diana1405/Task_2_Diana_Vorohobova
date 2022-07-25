@@ -48,6 +48,7 @@
         <form>
             <label for="pilsēta">Uzņēmuma atrašanas vieta<br></label>
             <select name="pilsēta" id="town">
+              <option value="0">Izvēlies</option>
               <option value="Rīga">Rīga</option>
               <option value="Jelgava">Jelgava</option>
               <option value="Ogre">Ogre</option>
@@ -56,13 +57,25 @@
         <form>
             <label for="veids">Uzņēmuma veids<br></label>
             <select name="veids" id="type">
+                <option value="0">Izvēlies</option>
                 <option value="Ēdinašana">Ēdinašana</option>
             </select>
         </form>
         </div>
 
+        <div id="select-riga-edisana">
+            <div class="edisana-logo"><img src="assets/img/sapnus_atbalsta/IMG-5633 1.jpg"></div>
+            <div class="edisana-name"><p>PURCH restaurant</p></div>
+            <div class="edisana-adrese"><p>+371 25425254<br>
+                Dzelzavas iela 51A</p></div>
+            <div class="edisana-logo"><img src="assets/img/sapnus_atbalsta/JAUNS LOGO-KURTS 1.jpg"></div>
+            <div class="edisana-name"><p>Kurts coffee</p></div>
+            <div class="edisana-adrese"><p>+371 23202079<br>
+                Cēsu iela 20, Tērbatas iela 2i</p></div>
+        </div>
+
         <!--KARTE-->
-        <img id="karte" src="assets/img/sapnus_atbalsta/Karte.png">
+        <div id="map"></div>
         
 
         <!--FOOTER-->
@@ -123,6 +136,9 @@
             
         </footer>
         <script src="assets/js/sapnus_atbalsta.js"></script>
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer></script>
     </body>
 
 </html>
