@@ -526,7 +526,7 @@ footer.foot {
     /* HIDE MENU */
     #menu {
        max-height: 0;
-       height: 660px;
+       height: 100vh;
        background: white;
        float: none;
        position: absolute;
@@ -552,7 +552,7 @@ footer.foot {
     }
 
     #menu a {
-        line-height: 80px;
+        line-height: 10vh;
     }
 
     #lv {

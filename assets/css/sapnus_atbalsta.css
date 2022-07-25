@@ -193,9 +193,94 @@ select {
     background-color: #C4C4C440;
 }
 
+#select-riga-edisana {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 823px;
+    padding: 20px;
+    margin: auto;
+}
+
+.edisana-name {
+    width: 40%;
+    padding-left: 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #2F4858;
+}
+
+.edisana-name, .edisana-adrese {
+    margin: auto;
+}
+
+#select-riga-edisana .edisana-logo {
+    width: 20%;
+}
+
+#select-riga-edisana .edisana-logo img {
+    width: 150px;
+    padding: 15px;
+}
+
+.edisana-adrese {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #2F4858;
+    text-align: right;
+    width: 40%;
+}
+
 /*KARTE*/
-#karte {
-    margin-bottom: -20px;
+#map {
+    height: 648px;
+    width: 100%;
+  }
+
+.karta-text {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 20px;
+    background-color: #FFA80080;
+    padding: 12px;
+}
+
+.karta-text div {
+    padding: 12px;
+}
+
+.karta-text h1, .karta-text h2 {
+    text-align: center;
+}
+
+.karta-text p {
+    text-align: right;
+}
+
+.gm-style-iw {
+    overflow: visible !important;
+}
+
+.gm-style-iw div {
+    overflow: visible !important;
+  }
+
+.gm-style .gm-style-iw-c {
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.gm-style .gm-style-iw-t::after {
+    display: none;
+}
+
+/*CONTROL gmnoprint gm-control-active*/
+.gm-control-active {
+    background-color: red;
 }
 
 /*FOOTER*/
