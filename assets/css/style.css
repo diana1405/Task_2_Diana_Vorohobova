@@ -130,6 +130,16 @@ nav {
     transition: .5s ease-in-out;
 }
 
+.nav-toggle.active {
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/X_sign_20.png");
+}
+
+#vector {
+    margin-top: -1px;
+}
+
 /*COOKIE*/
 
 #cookie_note{
@@ -601,26 +611,6 @@ footer.foot {
 
 /* PHOTOS AND VIDEO MOBILE */
 @media (max-width: 400px) {
-    #one {
-        width: 50%;
-        order: 4;
-    }
-
-    #two {
-        width: 50%;
-        order: 5;
-    }
-
-    #three {
-        width: 40%;
-        order: 2;
-    }
-
-    #four {
-        width: 60%;
-        order: 3;
-    }
-
     #video {
         position: relative;
         top: 50px;
@@ -650,7 +640,7 @@ footer.foot {
     /* HIDE MENU */
     #menu {
        max-height: 0;
-       height: 660px;
+       height: 100vh;
        background: white;
        float: none;
        position: absolute;
@@ -676,7 +666,7 @@ footer.foot {
     }
 
     #menu a {
-        line-height: 80px;
+        line-height: 10vh;
     }
 
     #lv {
@@ -1016,6 +1006,12 @@ footer.foot {
         background-image: url("../img/X_sign.png");
     }
 
+    .nav-toggle.active {
+        height: 15px;
+        width: 15px;
+        background-image: url("../img/X_sign.png");
+    }
+
     #menu {
         font-size: 18px;
     }
@@ -1039,6 +1035,27 @@ footer.foot {
     .container p {
         font-size: 12px;
         line-height: 15px;
+    }
+
+    /* PHOTOS */
+    #one {
+        width: 50%;
+        order: 4;
+    }
+
+    #two {
+        width: 50%;
+        order: 5;
+    }
+
+    #three {
+        width: 40%;
+        order: 2;
+    }
+
+    #four {
+        width: 60%;
+        order: 3;
     }
 
     /* BUTTONS */

@@ -139,6 +139,16 @@ nav {
     transition: .5s ease-in-out;
 }
 
+.nav-toggle.active {
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/X_sign_20.png");
+}
+
+#vector {
+    margin-top: -1px;
+}
+
 /*VIDEO*/
 #video {
     display: none;
@@ -154,21 +164,32 @@ nav {
 }
 
 #video #video2 {
-    max-width: 952px;
-    padding: 30px 20px 0px 20px;
-    margin: 0px auto;
-    position: relative;
+    max-width: 1072px;
+    min-width: 319px;
+    position:absolute;
+    padding: 0px 80px 0px 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
+
 #hide-button-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     max-width: 1092px;
-    margin: 0 auto;
 }
 
 #hide-button {
     width: 43px;
-    padding-top: 90px;
     padding-right: 20px;
+    padding-top: 50px;
     margin-left: auto;
     margin-right: 0;
     cursor: pointer;
@@ -178,14 +199,16 @@ nav {
     position: absolute;
     z-index: 100;
     max-width: 86px;
+    min-width: 50px;
+    width: 10%;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
+    border-radius: 50%;
     text-align: center;
     cursor: pointer;
-    border-radius: 50%;
     transition: .2s ease-in-out;
 }
 
@@ -943,6 +966,11 @@ footer.foot {
         width: 15px;
         margin-right: 18px;
         margin-top: 18px;
+    }
+
+    .nav-toggle.active {
+        height: 15px;
+        width: 15px;
         background-image: url("../img/X_sign.png");
     }
 

@@ -139,6 +139,16 @@ nav {
     transition: .5s ease-in-out;
 }
 
+.nav-toggle.active {
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/X_sign_20.png");
+}
+
+#vector {
+    margin-top: -1px;
+}
+
 /*TEXT*/
 #ideja_title {
     font-size: 48px;
@@ -377,7 +387,7 @@ footer.foot {
     /* HIDE MENU */
     #menu {
        max-height: 0;
-       height: 660px;
+       height: 100vh;
        background: white;
        float: none;
        position: absolute;
@@ -403,7 +413,7 @@ footer.foot {
     }
 
     #menu a {
-        line-height: 80px;
+        line-height: 10vh;
     }
 
     #lv {
@@ -571,8 +581,9 @@ footer.foot {
     #picture p {
         max-width: 520px;
         padding: 0px 10px;
-        margin-top: -160px;
+        margin-top: -190px;
         margin-bottom: 10px;
+        height: 138px;
     }
 
     .foot {
@@ -642,9 +653,9 @@ footer.foot {
 @media (max-width: 510px) {
     /* PHOTOS */
     #picture p {
-        max-width: 280px;
-        padding: 0 10px;
+        padding: 0 30px;
         margin-top: -205px;
+        height: 158px;
         margin-bottom: 0px;
         line-height: 26.68px;
     }
@@ -667,6 +678,11 @@ footer.foot {
         width: 15px;
         margin-right: 18px;
         margin-top: 18px;
+    }
+
+    .nav-toggle.active {
+        height: 15px;
+        width: 15px;
         background-image: url("../img/X_sign.png");
     }
 
