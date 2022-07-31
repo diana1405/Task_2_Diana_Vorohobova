@@ -1,5 +1,6 @@
 $('.nav-toggle').on('click', function(){
     $('#menu').toggleClass('active');
+    $('.nav-toggle').toggleClass('active');
   });
 
 $('#hide-button').on('click', function(){
