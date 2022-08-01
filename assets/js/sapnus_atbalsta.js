@@ -31,7 +31,7 @@ function initMap() {
     mapId: '5aee6f55666babb5',
   });
 
-  const popupContent = '<div class="karta-text"><div><h1>AUCH</h1><p>beauty home</p></div><div><h2>AUCH beauty home</h2><p>+371 28361686, +371 23202079<br>auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>';
+  const popupContent = '<div class="karta-text"><div><img src="assets/img/sapnus_atbalsta/AUCHlogo.png"></div><div><h2>AUCH beauty home</h2><p>+371 28361686, +371 23202079<br>auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>';
   const image = "assets/img/sapnus_atbalsta/yellow-marker.png";
   
 
