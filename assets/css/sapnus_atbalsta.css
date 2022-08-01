@@ -293,8 +293,16 @@ select {
 }
 
 /*CONTROL gmnoprint gm-control-active*/
+
 .gm-control-active {
-    background-color: red;
+  background-color: #ffaa0079!important;
+  margin-bottom: 10px !important;
+  border-radius: 10%;
+}
+
+.gmnoprint > div {
+  background-color: #eb1f6d00 !important;
+  margin-top: -10px !important;
 }
 
 /*FOOTER*/
@@ -559,7 +567,7 @@ footer.foot {
     }
 
     #info {
-        padding-top: 30px;
+        padding-top: 50px;
         line-height: 30px;
     }
 

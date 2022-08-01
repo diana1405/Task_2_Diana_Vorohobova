@@ -659,6 +659,17 @@ footer.foot {
         padding: 0px 10px;
     }
 
+    /*PHOTOS*/
+    #up {
+        background-image: url('../img/piesaki-sapni/up_tablet.png');
+        background-repeat: no-repeat;
+        margin-top: -10px;
+    }
+    
+    #down {
+        background-image: url('../img/piesaki-sapni/down_tablet.png');
+    }
+
     /*CONTACT*/
     .widget-title {
         margin-bottom: 50px;
@@ -714,7 +725,7 @@ footer.foot {
     }
 
     #info {
-        padding-top: 30px;
+        padding-top: 50px;
         line-height: 30px;
     }
 
@@ -933,6 +944,10 @@ footer.foot {
 
     #photos {
         margin-bottom: 120px;
+    }
+
+    #down {
+        background-image: url('../img/piesaki-sapni/down_tablet1.png');
     }
 
 
