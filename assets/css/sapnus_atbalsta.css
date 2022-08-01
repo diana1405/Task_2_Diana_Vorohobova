@@ -256,29 +256,35 @@ select {
     margin-bottom: -2%;
   }
 
+/*PLACE*/
 .karta-text {
     display: flex;
     flex-flow: row wrap;
-    font-size: 20px;
     background-color: #FFA80080;
     padding: 12px;
 }
 
 .karta-text img {
     width: 120px;
+    padding-top: 30px;
 }
 
 .karta-text div {
     padding: 12px;
 }
 
-.karta-text h1, .karta-text h2 {
-    text-align: center;
+.karta-text h2 {
+    text-align: right;
+    font-size: 24px;
+    padding-bottom: 20px;
 }
 
 .karta-text p {
     text-align: right;
+    font-size: 18px;
 }
+
+/*STYLE*/
 
 .gm-style-iw {
     overflow: visible !important;
@@ -710,6 +716,37 @@ footer.foot {
     
     #juris-hide {
         display: none;
+    }
+}
+
+@media (max-width: 595px) {
+    /*PLACE*/
+    .karta-text {
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .karta-text img {
+        width: 112px;
+        right: 0;
+        margin-left: auto;
+        padding-top: 0px;
+    }
+
+    .karta-text div {
+        padding: 0;
+    }
+
+    .karta-text h2 {
+        font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .karta-text p {
+        font-size: 14px;
     }
 }
 
