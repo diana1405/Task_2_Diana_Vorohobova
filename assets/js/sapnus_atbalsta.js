@@ -5,23 +5,15 @@ $('.nav-toggle').on('click', function(){
 
 
 
-
-const type = document.querySelector('#type');
-const town = document.querySelector('#town');
-
 function checkRiga() {
   if (town.selectedIndex == 1 && type.selectedIndex == 1) {
-    $('#select-riga-edisana').toggleClass('select');
+    $('#select-riga-edisana').addClass('select');
+  } else {
+    $('#select-riga-edisana').removeClass('select');
   }
 }
 
-$('#town').on('click', function(){
-  checkRiga();
-});
 
-$('#type').on('click', function(){
-  checkRiga();
-});
 
 
 // Initialize and add the map

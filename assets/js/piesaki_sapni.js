@@ -3,9 +3,21 @@ $('.nav-toggle').on('click', function(){
     $('.nav-toggle').toggleClass('active');
   });
 
+
+function checkRiga() {
+    if (document.getElementById("name").value == ""
+     || document.getElementById("email").value == ""
+     || document.getElementById("phone").value == ""
+     || document.getElementById("jautajums").value == ""
+     || document.getElementById("checkbox").checked == false) {
+    } else {
+      $('#paldies').addClass('paldies2');
+      $('#submit').addClass('submit2');
+      $('#obligati').addClass('submit2');
+      $('#check').addClass('submit2');
+    }
+}
+
 $('#submit').on('click', function(){
-    $('#paldies').toggleClass('paldies2');
-    $('#submit').toggleClass('submit2');
-    $('#obligati').toggleClass('submit2');
-    $('#check').toggleClass('submit2');
-  });
+    checkRiga();
+});
