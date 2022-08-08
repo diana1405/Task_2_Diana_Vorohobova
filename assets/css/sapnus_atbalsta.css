@@ -49,6 +49,7 @@ nav {
 .logo {
     display: block;
     float: left;
+    width: 221px;
     padding-left: 62px;
     margin-bottom: -20px;
     z-index: 100;
@@ -327,7 +328,7 @@ footer {
     padding: 20px 0 10px 0;
 }
 
-footer.foot {
+.foot {
     width: 182px;
 
 }
