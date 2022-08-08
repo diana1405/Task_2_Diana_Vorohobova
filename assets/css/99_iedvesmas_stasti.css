@@ -263,7 +263,7 @@ nav {
     margin: auto;
 }
 
-#videos .two:hover {
+#videos .two:hover { 
     cursor: pointer;
     transition: .2s ease-in-out;
     opacity: 0.2;
@@ -319,6 +319,7 @@ nav {
 
 #jauns2 {
     z-index: 6;
+    cursor: pointer;
 }
 
 .number {
