@@ -216,6 +216,7 @@ function initMap() {
   });
 
   a.addListener('click', function() {
+    infowindow.open(map, a);
     a.setIcon("assets/img/sapnus_atbalsta/grey-marker.png");
     b.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     c.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -237,7 +238,6 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
   });
   b.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -261,7 +261,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, b);
   });
   c.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -285,7 +285,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, c);
   });
   d.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -309,7 +309,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, d);
   });
   e.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -333,7 +333,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, e);
   });
   f.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -357,7 +357,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, f);
   });
   g.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -381,7 +381,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, g);
   });
   h.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -405,7 +405,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, h);
   });
   i.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -429,7 +429,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, i);
   });
   j.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -453,7 +453,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, j);
   });
   k.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -477,7 +477,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, k);
   });
   l.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -501,7 +501,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, l);
   });
   m.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -525,7 +525,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, m);
   });
   n.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -549,7 +549,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, n);
   });
   o.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -573,7 +573,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, o);
   });
   p.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -597,7 +597,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, p);
   });
   q.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -621,7 +621,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, q);
   });
   r.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -645,7 +645,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, r);
   });
   s.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -669,7 +669,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/grey-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, s);
   });
   t.addListener('click', function() {
     a.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
@@ -693,7 +693,7 @@ function initMap() {
     s.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     t.setIcon("assets/img/sapnus_atbalsta/grey-marker.png");
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
-    infowindow.close(map, marker);
+    infowindow.open(map, t);
   });
 }
 
