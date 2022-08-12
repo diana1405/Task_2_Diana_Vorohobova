@@ -45,24 +45,28 @@
 
         <!--SELECT-->
         <div id="select">
-        <form >
+        <div class="custom-select">
+        <form>
             <label for="pilsēta">Uzņēmuma atrašanas vieta<br></label>
-            <select name="pilsēta" id="town" onchange="if (this.selectedIndex) checkRiga();">
-              <option value="" selected disabled hidden>Izvēlies</option>
+            <select name="pilsēta" id="town">
+              <option value="">Izvēlies</option>
               <option value="1">Rīga</option>
               <option value="2">Jelgava</option>
               <option value="3">Ogre</option>
             </select>
         </form>
+        </div>
+        <div class="custom-select">
         <form>
             <label for="veids">Uzņēmuma veids<br></label>
-            <select name="veids" id="type" onchange="if (this.selectedIndex) checkRiga();">
+            <select name="veids" id="type">
                 <option value="" selected disabled hidden>Izvēlies</option>
                 <option value="1">Ēdinašana</option>
             </select>
         </form>
         </div>
-
+        </div>
+        
         <div id="select-riga-edisana">
             <div class="edisana-logo"><img src="assets/img/sapnus_atbalsta/IMG-5633 1.jpg"></div>
             <div class="edisana-name"><p>PURCH restaurant</p></div>
@@ -73,6 +77,8 @@
             <div class="edisana-adrese"><p>+371 23202079<br>
                 Cēsu iela 20, Tērbatas iela 2i</p></div>
         </div>
+
+
 
         <!--KARTE-->
         <div id="map"></div>
@@ -136,12 +142,12 @@
             
         </footer>
         <script src="assets/js/sapnus_atbalsta.js"></script>
-        <script 
+        <!--script 
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxIbgO5Z53mASm4wWymWjdwJPX9eU6zrI&callback=initMap" async defer>
-        </script>
-        <!--script
+        </script-->
+        <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer-->
+      defer>
         </script>
     </body>
 
