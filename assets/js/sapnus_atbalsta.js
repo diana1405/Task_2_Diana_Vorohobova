@@ -1,17 +1,72 @@
 $('.nav-toggle').on('click', function(){
     $('#menu').toggleClass('active');
     $('.nav-toggle').toggleClass('active');
+});
+
+function CustomZoomInControl(controlDiv, map) {
+
+  // Set CSS for the control border
+  var controlUI = document.createElement('div');
+  controlUI.style.backgroundColor = 'rgba(255, 168, 0, 0.5)';
+  controlUI.style.borderRadius = '12px';
+  controlUI.style.cursor = 'pointer';
+  controlUI.style.marginBottom = '20px';
+  controlUI.style.marginRight = '20px';
+  controlUI.style.width = '56px';
+  controlUI.style.height = '56px';
+  controlUI.style.textAlign = 'center';
+  controlDiv.appendChild(controlUI);
+
+  // Set CSS for the control interior
+  var controlText = document.createElement('div');
+  controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+  controlText.style.fontSize = '30px';
+  controlText.style.color = '#2F4858';
+  controlText.style.fontWeight = 'bolder';
+  controlText.style.paddingTop = '8px';
+  controlText.style.paddingLeft = '5px';
+  controlText.style.paddingRight = '5px';
+  controlText.innerHTML = '+';
+  controlUI.appendChild(controlText);
+
+  // Setup the click event listeners
+  google.maps.event.addDomListener(controlUI, 'click', function () {
+      map.setZoom(map.getZoom() + 1);
   });
 
+}
 
+function CustomZoomOutControl(controlDiv, map) {
 
-function checkRiga() {
-  if (town.selectedIndex == 1 && type.selectedIndex == 1) {
-    $('#select-riga-edisana').addClass('select');
-  } else {
-    $('#select-riga-edisana').removeClass('select');
-  }
-  initMap();
+  // Set CSS for the control border
+  var controlUI = document.createElement('div');
+  controlUI.style.backgroundColor = 'rgba(255, 168, 0, 0.5)';
+  controlUI.style.borderRadius = '12px';
+  controlUI.style.cursor = 'pointer';
+  controlUI.style.marginBottom = '70px';
+  controlUI.style.marginRight = '20px';
+  controlUI.style.width = '56px';
+  controlUI.style.height = '56px';
+  controlUI.style.textAlign = 'center';
+  controlDiv.appendChild(controlUI);
+
+  // Set CSS for the control interior
+  var controlText = document.createElement('div');
+  controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+  controlText.style.fontSize = '30px';
+  controlText.style.color = '#2F4858';
+  controlText.style.fontWeight = 'bolder';
+  controlText.style.paddingTop = '8px';
+  controlText.style.paddingLeft = '5px';
+  controlText.style.paddingRight = '5px';
+  controlText.innerHTML = '-';
+  controlUI.appendChild(controlText);
+
+  // Setup the click event listeners
+  google.maps.event.addDomListener(controlUI, 'click', function () {
+      map.setZoom(map.getZoom() - 1);
+  });
+
 }
 
 // Initialize and add the map
@@ -23,18 +78,32 @@ function initMap() {
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
-    zoomControlOptions: {
-      position: google.maps.ControlPosition.RIGHT_CENTER,
-    },
+    zoomControl: false,
     mapId: '5aee6f55666babb5',
   });
+
+  if ($(window).width() > 768) {
+    var customZoomOutControlDiv = document.createElement('div');
+    var customZoomOutControl = new CustomZoomOutControl(customZoomOutControlDiv, map);
+
+    customZoomOutControlDiv.index = 1;
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(customZoomOutControlDiv);
+
+    var customZoomInControlDiv = document.createElement('div');
+    var customZoomInControl = new CustomZoomInControl(customZoomInControlDiv, map);
+
+    customZoomInControlDiv.index = 1;
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(customZoomInControlDiv);
+  }
+  
+  
 
   const popupContent = '<div class="karta-text"><div><img src="assets/img/sapnus_atbalsta/AUCHlogo.png"></div><div><h2>AUCH beauty home</h2><p>+371 28361686, +371 23202079<br>auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>';
   const image = "assets/img/sapnus_atbalsta/yellow-marker.png";
   const image_grey = "assets/img/sapnus_atbalsta/yellow-marker.png";
   
 
-  // The marker, positioned at Uluru
+  // The marker in the center
   const marker = new google.maps.Marker({
     position: { lat: 56.94, lng: 24.10 },
     map: map,
@@ -700,7 +769,6 @@ function initMap() {
 window.initMap = initMap;
 
 
-
 //56.93768997592872, 24.06339755000021 //
 //56.947525687825284, 24.076997455548835 //
 //56.94069097660069, 24.08540189156203 //
@@ -725,6 +793,117 @@ window.initMap = initMap;
 //56.95669223553419, 24.13567569971369 //
 //56.946108838435684, 24.143621711944352 //
 //56.953192546976446, 24.150498068682417 //
+
+var x, i, j, l, ll, selElmnt, a, b, c, riga, edisana;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        initMap();
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        // RĪGA - ĒDINAŠANA - START
+        if (this.parentNode.previousSibling.innerHTML == 'Rīga') {
+          riga = 'true';
+        } else if (this.parentNode.previousSibling.innerHTML == 'Ēdinašana') {
+          riga = riga;
+        } else {
+          riga = 'false';
+        }
+
+        if (this.parentNode.previousSibling.innerHTML == 'Ēdinašana') {
+          edisana = 'true';
+        } else if (this.parentNode.previousSibling.innerHTML == 'Izvēlies') {
+          edisana = 'false';
+        } else {
+          edisana = edisana;
+        }
+
+        if (riga == 'true' && edisana == 'true') {
+          $('#select-riga-edisana').addClass('select');
+        } else {
+          $('#select-riga-edisana').removeClass('select');
+        }
+        initMap();
+        // RĪGA - ĒDINAŠANA - END
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+
+
+
+
+
+
 
 
 
