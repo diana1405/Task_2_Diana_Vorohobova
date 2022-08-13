@@ -21,3 +21,24 @@ function checkRiga() {
 $('#submit').on('click', function(){
     checkRiga();
 });
+
+
+if ($(window).width() < 490) {
+  document.getElementById("footer-img").src="assets/img/ideja/m-footer.png";
+  document.getElementById("footer").style.paddingTop = '2px';
+}
+else {
+  document.getElementById("footer-img").src="assets/img/ideja/footer.png";
+  document.getElementById("footer").style.paddingTop = '20px';
+}
+
+$(window).resize(function() {
+if ($(window).width() < 490) {
+  document.getElementById("footer-img").src="assets/img/ideja/m-footer.png";
+  document.getElementById("footer").style.paddingTop = '2px';
+}
+else {
+  document.getElementById("footer-img").src="assets/img/ideja/footer.png";
+  document.getElementById("footer").style.paddingTop = '20px';
+}
+});

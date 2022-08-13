@@ -3,6 +3,26 @@ $('.nav-toggle').on('click', function(){
     $('.nav-toggle').toggleClass('active');
 });
 
+if ($(window).width() < 490) {
+  document.getElementById("footer-img").src="assets/img/ideja/m-footer.png";
+  document.getElementById("map").style.marginBottom = '-12%';
+}
+else {
+  document.getElementById("footer-img").src="assets/img/ideja/footer-dekstop.png";
+  document.getElementById("map").style.marginBottom = '-4%';
+}
+
+$(window).resize(function() {
+if ($(window).width() < 490) {
+  document.getElementById("footer-img").src="assets/img/ideja/m-footer.png";
+  document.getElementById("map").style.marginBottom = '-12%';
+}
+else {
+  document.getElementById("footer-img").src="assets/img/ideja/footer-dekstop.png";
+  document.getElementById("map").style.marginBottom = '-4%';
+}
+});
+
 function CustomZoomInControl(controlDiv, map) {
 
   // Set CSS for the control border
