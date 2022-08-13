@@ -143,7 +143,7 @@ nav {
 .nav-toggle.active {
     height: 20px;
     width: 20px;
-    background-image: url("../img/X_sign_20.png");
+    background-image: url("../img/X_sign.png");
 }
 
 #vector {
@@ -158,7 +158,7 @@ nav {
 }
 
 .container {
-    margin: 0px auto 97px auto;
+    margin: 0px auto 80px auto;
     width: 100%;
     max-width: 800px;
     padding: 0px;
@@ -183,7 +183,7 @@ nav {
     flex-flow: row wrap;
     justify-content:space-between;
     width: 100%;
-    max-width: 626px;
+    max-width: 650px;
 }
 
 form label {
@@ -275,7 +275,7 @@ select {
   .select-selected:after {
     position: absolute;
     content: "";
-    top: 64px;
+    top: 69.5px;
     right: 10px;
     width: 0;
     height: 0;
@@ -286,7 +286,7 @@ select {
   /*point the arrow upwards when the select box is open (active):*/
   .select-selected.select-arrow-active:after {
     border-color: transparent transparent #2F4858 transparent;
-    top: 57px;
+    top: 63.5px;
   }
   
   /*style the items (options), including the selected item:*/
@@ -294,7 +294,7 @@ select {
     color: #2F4858;
     font-weight: 400;
     font-size: 18px;
-    padding: 8px 16px;
+    padding: 12.5px 16px;
     border: 1px solid transparent;
     cursor: pointer;
     user-select: none;
@@ -380,6 +380,10 @@ select {
 }
 
 /*FOOTER*/
+#br {
+    display: none;
+}
+
 #footer-img {
     margin-bottom: -1px;
     position: relative;
@@ -584,7 +588,7 @@ footer {
 
     /* TEXT */
     .container {
-        margin: 0px auto 90px auto;
+        margin: 0px auto 70px auto;
         width: 100%;
         max-width: 608px;
         padding-top: 178px;
@@ -594,13 +598,18 @@ footer {
         padding-bottom: 65px;
     }
 
+    /*KARTE*/
+    #map {
+        height: 812px;
+    }
+
     /* SELECT */
     #select {
         margin-bottom: 70px;
     }
 
     #select-riga-edisana {
-        max-width: 700px;
+        max-width: 680px;
         margin: 140px auto 35px auto;
     }
 
@@ -609,14 +618,18 @@ footer {
     }
 
     .edisana-name {
-        width: 50%;
+        width: 40%;
+        padding-left: 8px;
     }
 
     .edisana-adrese {
-        width: 25%;
+        width: 30%;
     }
 
     /* FOOTER */
+    #br {
+        display: block;
+    }
 
     #second-menu {
         display: none;
@@ -709,8 +722,8 @@ footer {
         margin: auto;
     }
 
-    form:last-child {
-        margin-top: 40px;
+    .custom-select:last-child {
+        margin-top: 20px;
     }
 
     #select-riga-edisana.select {
@@ -836,7 +849,6 @@ footer {
     .nav-toggle.active {
         height: 15px;
         width: 15px;
-        background-image: url("../img/X_sign.png");
     }
 
     #menu {
@@ -846,7 +858,7 @@ footer {
     /* TEXT */
 
     .container {
-        margin: 0px auto 82px auto;
+        margin: 0px auto 65px auto;
         width: 100%;
         max-width: 280px;
         padding-top: 110px;
@@ -862,6 +874,11 @@ footer {
         line-height: 17.07px;
     }
 
+    /*KARTE*/
+    #map {
+        height: 606px;
+    }
+
     /* SELECT */
     form {
         margin: auto;
@@ -869,10 +886,6 @@ footer {
 
     form label {
         font-size: 14px;
-    }
-
-    form:last-child {
-        margin-top: 40px;
     }
 
     /* FOOTER */

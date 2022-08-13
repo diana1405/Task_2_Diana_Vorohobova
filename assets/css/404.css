@@ -140,7 +140,7 @@ nav {
 .nav-toggle.active {
     height: 20px;
     width: 20px;
-    background-image: url("../img/X_sign_20.png");
+    background-image: url("../img/X_sign.png");
 }
 
 #vector {
@@ -206,6 +206,10 @@ nav {
 }
  
 /*FOOTER*/
+#br {
+    display: none;
+}
+
 #footer-img {
     margin-bottom: -1px;
 }
@@ -416,6 +420,9 @@ footer {
     }
 
     /* FOOTER */
+    #br {
+        display: block;
+    }
 
     #second-menu {
         display: none;
@@ -581,7 +588,6 @@ footer {
     .nav-toggle.active {
         height: 15px;
         width: 15px;
-        background-image: url("../img/X_sign.png");
     }
 
     #menu {

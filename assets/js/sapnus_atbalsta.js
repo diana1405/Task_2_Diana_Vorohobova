@@ -10,8 +10,8 @@ function CustomZoomInControl(controlDiv, map) {
   controlUI.style.backgroundColor = 'rgba(255, 168, 0, 0.5)';
   controlUI.style.borderRadius = '12px';
   controlUI.style.cursor = 'pointer';
-  controlUI.style.marginBottom = '20px';
-  controlUI.style.marginRight = '20px';
+  controlUI.style.marginBottom = '24px';
+  controlUI.style.marginRight = '62px';
   controlUI.style.width = '56px';
   controlUI.style.height = '56px';
   controlUI.style.textAlign = 'center';
@@ -20,10 +20,10 @@ function CustomZoomInControl(controlDiv, map) {
   // Set CSS for the control interior
   var controlText = document.createElement('div');
   controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-  controlText.style.fontSize = '30px';
+  controlText.style.fontSize = '35px';
   controlText.style.color = '#2F4858';
   controlText.style.fontWeight = 'bolder';
-  controlText.style.paddingTop = '8px';
+  controlText.style.paddingTop = '6px';
   controlText.style.paddingLeft = '5px';
   controlText.style.paddingRight = '5px';
   controlText.innerHTML = '+';
@@ -43,8 +43,8 @@ function CustomZoomOutControl(controlDiv, map) {
   controlUI.style.backgroundColor = 'rgba(255, 168, 0, 0.5)';
   controlUI.style.borderRadius = '12px';
   controlUI.style.cursor = 'pointer';
-  controlUI.style.marginBottom = '70px';
-  controlUI.style.marginRight = '20px';
+  controlUI.style.marginBottom = '78px';
+  controlUI.style.marginRight = '62px';
   controlUI.style.width = '56px';
   controlUI.style.height = '56px';
   controlUI.style.textAlign = 'center';
@@ -53,10 +53,10 @@ function CustomZoomOutControl(controlDiv, map) {
   // Set CSS for the control interior
   var controlText = document.createElement('div');
   controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-  controlText.style.fontSize = '30px';
+  controlText.style.fontSize = '45px';
   controlText.style.color = '#2F4858';
   controlText.style.fontWeight = 'bolder';
-  controlText.style.paddingTop = '8px';
+  controlText.style.paddingTop = '0px';
   controlText.style.paddingLeft = '5px';
   controlText.style.paddingRight = '5px';
   controlText.innerHTML = '-';

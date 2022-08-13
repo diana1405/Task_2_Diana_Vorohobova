@@ -143,7 +143,7 @@ nav {
 .nav-toggle.active {
     height: 20px;
     width: 20px;
-    background-image: url("../img/X_sign_20.png");
+    background-image: url("../img/X_sign.png");
 }
 
 #vector {
@@ -182,7 +182,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4.2% auto 0 auto;
+    margin: 0 auto;
+    height: 100%;
     max-width: 1092px;
 }
 
@@ -192,7 +193,7 @@ nav {
 
 #hide-button {
     width: 43px;
-    padding: 50px 20px 20px 0;
+    padding: 10px 20px 20px 0;
     margin-left: auto;
     margin-right: 0;
     cursor: pointer;
@@ -225,6 +226,7 @@ nav {
     font-weight: 500;
     font-size: 36px;
     line-height: 53.35px;
+    margin-top: 15px;
     text-align: center;
     color: white;
 }
@@ -434,6 +436,10 @@ nav {
 
 
 /*FOOTER*/
+#br {
+    display: none;
+}
+
 #footer-img {
     margin-bottom: -1px;
 }
@@ -696,6 +702,11 @@ footer {
     #ideja_title {
         padding-bottom: 65px;
     }
+    /*VIDEO*/
+    #hide-button {
+        width: 55px;
+        padding: 20px 35px 20px 0px;
+    }
 
     /*VIDEOS*/
     #videos img {
@@ -745,6 +756,9 @@ footer {
     }
 
     /* FOOTER */
+    #br {
+        display: block;
+    }
 
     #second-menu {
         display: none;
@@ -825,6 +839,11 @@ footer {
 /*FOOTER MOBILE*/
 @media (max-width: 630px) {
     /* VIDEO */
+    #hide-button {
+        width: 35px;
+        padding: 20px 20px 20px 0;
+    }
+
     #video #video2 {
         max-width: 952px;
         min-width: 199px;
@@ -983,11 +1002,20 @@ footer {
     .nav-toggle.active {
         height: 15px;
         width: 15px;
-        background-image: url("../img/X_sign.png");
     }
 
     #menu {
         font-size: 18px;
+    }
+
+    /* VIDEO */
+    #hide-button {
+        width: 35px;
+        padding: 20px 20px 15px 0;
+    }
+
+    #video p {
+        font-size: 24px;
     }
 
     /* TEXT */
