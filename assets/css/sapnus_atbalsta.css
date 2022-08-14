@@ -809,6 +809,7 @@ footer {
         flex-flow: row wrap;
         flex-direction: column;
         padding: 12px;
+        width: 280px;
     }
 
     .karta-text img {
