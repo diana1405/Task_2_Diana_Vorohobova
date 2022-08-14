@@ -462,6 +462,8 @@ form p {
 
 .support2 {
     margin: -5px 0 0 0;
+    position: relative;
+    z-index: 1;
 }
 
 #bg {
@@ -1062,6 +1064,10 @@ footer {
     #four {
         width: 60%;
         order: 3;
+    }
+
+    #vector1 {
+        margin-bottom: -25px;
     }
 
     /* BUTTONS */

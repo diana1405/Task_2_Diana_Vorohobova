@@ -237,21 +237,7 @@ form label {
     width: 40%;
 }
 
-/* TEST 
-
-select {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21.94px;
-    margin-top: 15px;
-    padding-left: 5px;
-    width: 288px;
-    height: 43px;
-    border: none;
-    border-radius: 5px;
-    background-color: #C4C4C440;
-}*/
+/* SELECT */
 
 /*the container must be positioned relative:*/
 .custom-select {
@@ -302,6 +288,14 @@ select {
 
   .select-arrow-active {
     border-radius: 7px 7px 0 0;
+    border: 1px solid transparent;
+    background-image: 
+    linear-gradient(0deg, #E7E7E7 0%, #E7E7E7 100%),
+    linear-gradient(0deg, #2F4858 0%, #2F4858 100%);
+    background-origin: padding-box, padding-box, padding-box;
+    background-repeat: no-repeat;
+    background-size: 33px 100%, 251px 1.5px;
+    background-position: right bottom, center bottom;
   }
   
   /*style items (options):*/
@@ -336,8 +330,10 @@ select {
 .karta-text {
     display: flex;
     flex-flow: row wrap;
-    background-color: #FFA80080;
+    background-color: rgba(255, 168, 0, 0.5);
+    border-radius: 7px;
     padding: 12px;
+    color: #2F4858;
 }
 
 .karta-text img {
@@ -378,6 +374,16 @@ select {
 .gm-style .gm-style-iw-t::after {
     display: none;
 }
+
+img[src="http://maps.gstatic.com/mapfiles/api-3/images/mapcnt3.png"] {
+    display: none;
+}
+
+.gm-style .gm-style-iw-tc {
+    display: none;
+}
+
+.gm-ui-hover-effect {display: none !important; }
 
 /*FOOTER*/
 #br {

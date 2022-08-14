@@ -400,6 +400,10 @@ nav {
     font-weight: 500;
 }
 
+#picture img {
+    width: 289px;
+}
+
 #text-par-komandu {
     font-family: 'Montserrat';
     margin: 28px auto 50px auto;

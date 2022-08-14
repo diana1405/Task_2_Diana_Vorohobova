@@ -37,21 +37,53 @@ function checkCookies() {
 checkCookies();
 
 if ($(window).width() < 490) {
-  document.getElementById("footer-img").src="assets/img/ideja/m-footer.png";
+  document.getElementById("support3").src="assets/img/ideja/m-footer.png";
+  document.getElementById("support4").src="assets/img/support4.png";
+  document.getElementById("footer").style.marginTop = '-2px';
+  document.getElementById("id-sp").style.paddingBottom = '85px';
+  document.getElementById("support3").style.marginTop = '-40px';
   document.getElementById("footer").style.paddingTop = '2px';
+  document.getElementById("container-footer").style.marginTop = '0px';
 }
 else {
-  document.getElementById("footer-img").src="assets/img/ideja/footer.png";
-  document.getElementById("footer").style.paddingTop = '20px';
+  document.getElementById("support3").src="assets/img/Group 9_down.png";
+  document.getElementById("support4").src="assets/img/Group 9_up.png";
+  document.getElementById("footer").style.marginTop = '-50px';
+  document.getElementById("id-sp").style.paddingBottom = '55px';
+  document.getElementById("support3").style.marginTop = '-5px';
+  document.getElementById("footer").style.paddingTop = '50px';
+  document.getElementById("container-footer").style.marginTop = '35px';
 }
 
 $(window).resize(function() {
 if ($(window).width() < 490) {
-  document.getElementById("footer-img").src="assets/img/ideja/m-footer.png";
+  document.getElementById("support3").src="assets/img/ideja/m-footer.png";
+  document.getElementById("support4").src="assets/img/support4.png";
+  document.getElementById("footer").style.marginTop = '-2px';
+  document.getElementById("id-sp").style.paddingBottom = '85px';
+  document.getElementById("support3").style.marginTop = '-40px';
   document.getElementById("footer").style.paddingTop = '2px';
+  document.getElementById("container-footer").style.marginTop = '0px';
 }
 else {
-  document.getElementById("footer-img").src="assets/img/ideja/footer.png";
-  document.getElementById("footer").style.paddingTop = '20px';
+  document.getElementById("support3").src="assets/img/Group 9_down.png";
+  document.getElementById("support4").src="assets/img/Group 9_up.png";
+  document.getElementById("footer").style.marginTop = '-50px';
+  document.getElementById("id-sp").style.paddingBottom = '55px';
+  document.getElementById("support3").style.marginTop = '-5px';
+  document.getElementById("footer").style.paddingTop = '50px';
+  document.getElementById("container-footer").style.marginTop = '35px';
 }
 });
+
+
+if ($(window).width() < 350) {
+  document.getElementById("support3").style.marginTop = '-35px';
+}
+
+$(window).resize(function() {
+if ($(window).width() < 350) {
+  document.getElementById("support3").style.marginTop = '-35px';
+}
+});
+

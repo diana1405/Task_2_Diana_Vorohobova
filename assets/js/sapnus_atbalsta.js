@@ -115,12 +115,17 @@ function initMap() {
     customZoomInControlDiv.index = 1;
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(customZoomInControlDiv);
   }
-  
-  
 
   const popupContent = '<div class="karta-text"><div><img src="assets/img/sapnus_atbalsta/AUCHlogo.png"></div><div><h2>AUCH beauty home</h2><p>+371 28361686, +371 23202079<br>auchbeauty@gmail.com<br>Cēsu iela 20, Rīga</p></div></div>';
   const image = "assets/img/sapnus_atbalsta/yellow-marker.png";
   const image_grey = "assets/img/sapnus_atbalsta/yellow-marker.png";
+
+  if ($(window).width() < 595) {
+    var infowindow_position = new google.maps.Size(100, 230);
+  }
+  else {
+    var infowindow_position = new google.maps.Size(245, 100);
+  }
   
 
   // The marker in the center
@@ -132,6 +137,8 @@ function initMap() {
 
   infowindow = new google.maps.InfoWindow({
     content: popupContent,
+    pixelOffset: infowindow_position,
+    maxWidth: '100px',
   });
 
   const a = new google.maps.Marker({ //show
@@ -784,6 +791,15 @@ function initMap() {
     marker.setIcon("assets/img/sapnus_atbalsta/yellow-marker.png");
     infowindow.open(map, t);
   });
+
+  $(window).resize(function() {
+    if ($(window).width() < 595) {
+      infowindow.set("pixelOffset", new google.maps.Size(100, 230));
+    }
+    else {
+      infowindow.set("pixelOffset", new google.maps.Size(245, 100));
+    }
+    });
 }
 
 window.initMap = initMap;
