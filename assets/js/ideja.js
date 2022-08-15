@@ -41,19 +41,12 @@ $(window).resize(function() {
 });
 
 
-
 if ($(window).width() < 510) {
   document.getElementById("java").src="assets/img/ideja/Juris_mobile.png";
-}
-else {
-  document.getElementById("java").src="assets/img/ideja/Juris2.png";
 }
 
 $(window).resize(function() {
 if ($(window).width() < 510) {
   document.getElementById("java").src="assets/img/ideja/Juris_mobile.png";
-}
-else {
-  document.getElementById("java").src="assets/img/ideja/Juris2.png";
 }
 });

@@ -49,7 +49,7 @@ else {
   document.getElementById("support3").src="assets/img/Group 9_down.png";
   document.getElementById("support4").src="assets/img/Group 9_up.png";
   document.getElementById("footer").style.marginTop = '-50px';
-  document.getElementById("id-sp").style.paddingBottom = '55px';
+  document.getElementById("id-sp").style.paddingBottom = '100px';
   document.getElementById("support3").style.marginTop = '-5px';
   document.getElementById("footer").style.paddingTop = '50px';
   document.getElementById("container-footer").style.marginTop = '35px';
@@ -69,7 +69,7 @@ else {
   document.getElementById("support3").src="assets/img/Group 9_down.png";
   document.getElementById("support4").src="assets/img/Group 9_up.png";
   document.getElementById("footer").style.marginTop = '-50px';
-  document.getElementById("id-sp").style.paddingBottom = '55px';
+  document.getElementById("id-sp").style.paddingBottom = '100px';
   document.getElementById("support3").style.marginTop = '-5px';
   document.getElementById("footer").style.paddingTop = '50px';
   document.getElementById("container-footer").style.marginTop = '35px';
@@ -84,6 +84,16 @@ if ($(window).width() < 350) {
 $(window).resize(function() {
 if ($(window).width() < 350) {
   document.getElementById("support3").style.marginTop = '-35px';
+}
+});
+
+if ($(window).width() < 786 && $(window).width() > 489) {
+  document.getElementById("id-sp").style.paddingBottom = '55px';
+}
+
+$(window).resize(function() {
+if ($(window).width() < 786 && $(window).width() > 489) {
+  document.getElementById("id-sp").style.paddingBottom = '55px';
 }
 });
 
