@@ -102,7 +102,7 @@ function initMap() {
     mapId: '5aee6f55666babb5',
   });
 
-  if ($(window).width() > 768) {
+  if ($(window).width() > 780) {
     var customZoomOutControlDiv = document.createElement('div');
     var customZoomOutControl = new CustomZoomOutControl(customZoomOutControlDiv, map);
 
@@ -895,7 +895,7 @@ for (i = 0; i < l; i++) {
         if (this.parentNode.previousSibling.innerHTML == 'Ēdinašana') {
           edisana = 'true';
           this.parentNode.previousSibling.style.fontWeight = '700';
-          
+
         } else if (this.parentNode.previousSibling.innerHTML == 'Izvēlies') {
           edisana = 'false';
         } else {
