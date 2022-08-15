@@ -383,6 +383,9 @@ footer {
     
     #lv2 {
         order: 1;
+        text-decoration: underline;
+        text-decoration-color: rgb(255, 203, 102);
+        text-decoration-thickness: 3px;
     }
     
 }
