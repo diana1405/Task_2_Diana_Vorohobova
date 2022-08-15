@@ -186,7 +186,7 @@ nav {
 
 .cookie_accept, .cookie_noradit{
     font-family: 'Montserrat';
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17.07px;
     text-align: center;
@@ -341,6 +341,7 @@ button {
     border-radius: 100px;
     color: white;
     font-size: 18px;
+    font-weight: 400;
     cursor: pointer;
     transition: .2s ease-in-out;
 
