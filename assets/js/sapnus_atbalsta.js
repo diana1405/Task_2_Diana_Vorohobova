@@ -885,6 +885,7 @@ for (i = 0; i < l; i++) {
         // RĪGA - ĒDINAŠANA - START
         if (this.parentNode.previousSibling.innerHTML == 'Rīga') {
           riga = 'true';
+          this.parentNode.previousSibling.style.fontWeight = '700';
         } else if (this.parentNode.previousSibling.innerHTML == 'Ēdinašana') {
           riga = riga;
         } else {
@@ -893,6 +894,8 @@ for (i = 0; i < l; i++) {
 
         if (this.parentNode.previousSibling.innerHTML == 'Ēdinašana') {
           edisana = 'true';
+          this.parentNode.previousSibling.style.fontWeight = '700';
+          
         } else if (this.parentNode.previousSibling.innerHTML == 'Izvēlies') {
           edisana = 'false';
         } else {
