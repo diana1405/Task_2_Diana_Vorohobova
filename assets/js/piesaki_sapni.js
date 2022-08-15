@@ -1,7 +1,32 @@
 $('.nav-toggle').on('click', function(){
     $('#menu').toggleClass('active');
     $('.nav-toggle').toggleClass('active');
-  });
+});
+
+$(window).resize(function() {
+  if ($(window).width() > 1249) {
+    $('#menu').removeClass('active');
+    $('.nav-toggle').removeClass('active');
+  }
+});
+
+// LANGUAGE
+$('#lv2').on('click', function(){
+    $('#lang').toggleClass('lang-active');
+});
+
+$(window).resize(function() {
+  if ($(window).width() < 1249) {
+    $('#lang').removeClass('lang-active');
+  }
+});
+
+document.addEventListener('mouseup', function(e) {
+  var container = document.getElementById('lang');
+  if (!container.contains(e.target)) {
+    $('#lang').removeClass('lang-active');
+  }
+});
 
 
 function checkRiga() {

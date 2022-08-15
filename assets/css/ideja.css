@@ -150,6 +150,51 @@ nav {
     margin-top: -1px;
 }
 
+/*LANGUAGE*/
+
+#lang {
+    position: fixed;
+    display: none;
+    z-index: 99;
+    margin-top: 73px;
+    padding: 2px;
+    margin-right: 49.8px;
+    right: 0;
+    width: 54.6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+}
+
+#lang.lang-active {
+    display: block;
+}
+
+#lang a {
+    color: #111;
+}
+
+#ru2, #en2 {
+    background-color: white;
+    padding-bottom: 12px;
+}
+
+#ru2 {
+    padding-top: 10px;
+    border-radius: 7px 7px 0 0;
+}
+
+#en2 {
+    border-radius: 0 0 7px 7px;
+}
+
+#lang a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 203, 102);
+    text-decoration-thickness: 3px;
+}
+
 /*TEXT*/
 #ideja_title {
     font-size: 48px;
@@ -448,6 +493,11 @@ footer {
         text-decoration: underline;
         text-decoration-color: rgb(255, 203, 102);
         text-decoration-thickness: 3px;
+    }
+
+    /*LANGUAGE*/
+    #lang.lang-active {
+        display: none;
     }
     
 }
